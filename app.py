@@ -146,7 +146,7 @@ else:
     
     if recent_entries:
         for entry in recent_entries:
-            from utils.styles import get_sentiment_badge, get_theme_badges
+            from styles import get_sentiment_badge, get_theme_badges
             
             sentiment_badge = get_sentiment_badge(entry.get('sentiment_label'), entry.get('sentiment_score')) if entry.get('sentiment_label') else ""
             theme_badges = get_theme_badges(entry.get('themes', []))
@@ -196,7 +196,7 @@ with st.sidebar:
     # Export option
     st.markdown("### Export Data")
     if st.button("Export All Entries"):
-        from utils.helpers import export_to_markdown
+        from helper import export_to_markdown
         entries = st.session_state.db.get_all_entries()
         
         if entries:
