@@ -1,1 +1,1 @@
-# Hackathon-Case-Study-AI-Powered-Journaling-Companion
+# PANW HACKATHON
